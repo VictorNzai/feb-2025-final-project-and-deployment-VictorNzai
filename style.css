@@ -1,0 +1,127 @@
+/* General Reset */  
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: 'Helvetica Neue', Arial, sans-serif;  
+    line-height: 1.6;  
+    background-color: #f9f9f9;  
+    color: #333;  
+    padding: 20px; /* Add some padding to the body */  
+}  
+
+/* Header and Navigation */  
+header {  
+    background: #3b5998; /* A rich blue for the header */  
+    color: #fff;  
+    padding: 20px;  
+    text-align: center;  
+    border-radius: 8px; /* Slightly rounded corners */  
+    margin-bottom: 20px; /* Space between header and content */  
+}  
+
+h1 {  
+    margin-bottom: 10px;  
+    font-size: 2.5em; /* Larger font size for title */  
+}  
+
+nav ul {  
+    list-style: none;  
+}  
+
+nav li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+nav a {  
+    text-decoration: none;  
+    color: #fff;  
+    padding: 10px 15px; /* Button-like padding */  
+    border-radius: 5px;  
+    transition: background 0.3s, color 0.3s;  
+}  
+
+nav a:hover {  
+    background: rgba(255, 255, 255, 0.3); /* Slightly lighter on hover */  
+    color: #333; /* Change text color on hover */  
+}  
+
+/* Main Content */  
+main {  
+    max-width: 800px; /* Width for main content */  
+    margin: auto; /* Center content */  
+    padding: 20px; /* Add padding */  
+    background: #fff; /* White background for the main content area */  
+    border-radius: 8px; /* Maintain consistent corner rounding */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */  
+}  
+
+article {  
+    background: #fefefe; /* Light background for articles */  
+    padding: 20px;  
+    margin-bottom: 20px;  
+    border-left: 4px solid #3b5998; /* Accent line on the left */  
+    border-radius: 6px; /* Rounded corners */  
+    transition: transform 0.2s; /* Smooth transform */  
+}  
+
+article:hover {  
+    transform: translateY(-5px); /* Elevate on hover */  
+}  
+
+h2 {  
+    margin-bottom: 10px; /* Space between article title and content */  
+    color: #3b5998; /* Match title with the header color */  
+}  
+
+a.read-more {  
+    display: inline-block; /* Make it a block for padding */  
+    margin-top: 10px;  
+    text-decoration: none;  
+    color: #3b5998; /* Link color */  
+    font-weight: bold;  
+    transition: color 0.3s;  
+}  
+
+a.read-more:hover {  
+    color: #555; /* Darker color on hover for better visibility */  
+}  
+
+/* Footer */  
+footer {  
+    text-align: center;  
+    padding: 15px 0;  
+    background: #3b5998; /* Match the footer with the header */  
+    color: #fff;  
+    border-radius: 8px; /* Consistent rounding */  
+}  
+
+/* Responsive Design */  
+@media (max-width: 768px) {  
+    nav li {  
+        display: block; /* Stack links vertically */  
+        margin: 10px 0; /* Space between links */  
+    }  
+
+    main {  
+        padding: 15px; /* Less padding for smaller screens */  
+    }  
+}  
+
+@media (max-width: 480px) {  
+    h1 {  
+        font-size: 2em; /* Smaller header font size */  
+    }  
+
+    nav a {  
+        font-size: 0.9em; /* Smaller text for navigation */  
+    }  
+
+    article {  
+        padding: 15px; /* Slightly less padding */  
+    }  
+}  
